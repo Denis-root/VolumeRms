@@ -76,8 +76,3 @@ Windows (Salida) → VB-CABLE → [Entrada de la app] → AGC + Limitador + Soft
 
 ---
 
-## Comandos útiles
-- Actualizar pip:
-  - $ python -m pip install -U pip
-- Congelar dependencias (si cambiás algo):
-  - $ pip freeze > instalaciones
