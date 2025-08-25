@@ -68,11 +68,5 @@ Windows (Salida) → VB-CABLE → [Entrada de la app] → AGC + Limitador + Soft
 
 ---
 
-## Notas técnicas
-- Fs: 48 kHz · Blocksize: 1024 (~21.3 ms) · Estéreo
-- AGC: objetivo RMS = `techo − margen`; ataque ~30 ms, release ~300 ms
-- Limitador: ceiling de picos; soft-clip (tanh) cerca de 0 dBFS
-- Latencia baja (evitá ruteos en bucle)
 
----
 
