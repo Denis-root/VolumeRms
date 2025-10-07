@@ -1,2 +1,9 @@
-pip install sounddevice numpy
-pip install PyQt5 pyqtgraph
+sounddevice
+numpy
+PyQt5
+pyqtgraph
+setuptools
+wheel
+pycparser
+cffi
+pillow
