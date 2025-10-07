@@ -1,0 +1,14 @@
+Remove-Item -Recurse -Force build, dist, Version8.spec -ErrorAction SilentlyContinue
+foreach($p in 'build','dist','Version8.spec'){ if(Test-Path $p){ Remove-Item -Recurse -Force $p } }
+py -m PyInstaller --onefile --windowed --noconfirm --clean --name Version8 --icon=logo.ico --collect-data pyqtgraph --collect-binaries sounddevice Version8.py
+
+
+
+
+
+
+Por si awebo no muestra el icono nuevo
+Stop-Process -Name explorer -Force
+Remove-Item "$env:LOCALAPPDATA\IconCache.db" -Force -ErrorAction SilentlyContinue
+Remove-Item "$env:LOCALAPPDATA\Microsoft\Windows\Explorer\iconcache_*" -Force -ErrorAction SilentlyContinue
+Start-Process explorer
