@@ -1,8 +1,2 @@
-sounddevice
-numpy
-PyQt5
-pyqtgraph
-setuptools
-wheel
-pyinstaller
-pillow
+pip install sounddevice numpy
+pip install PyQt5 pyqtgraph
